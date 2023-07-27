@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    class Temperature {
+        c;
+        constructor(c) {
+            this.c = c;
+        }
+
+        cToF () {
+            return this.c * 1.8 + 32;
+        }
+
+        cToKelvin () {
+            return this.c + 273.15;
+        }
+    }
+
+    let celsius = new Temperature(10);
+    let fahrenheit = celsius.cToF();
+    let kelvin = celsius.cToKelvin();
+    document.write(`Fahrenheit: ${fahrenheit} <br> Kelvin ${kelvin}`);
+  </script>
+</body>
+</html>
